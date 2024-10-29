@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+   @apply m-0 p-0 box-border;
+  }
+  body {
+    @apply h-screen bg-gradient-to-tr from-customPurpleStart to-customPurpleEnd;
+    @apply font-roboto
+  }
+}
+
+@layer utilities {
+  .bg-correct {
+    background-color: #10B981; /* Green color for correct answers */
+  }
+
+  .bg-wrong {
+    background-color: #EF4444; /* Red color for wrong answers */
+  }
+
+  .text-correct {
+    color: #FFFFFF; /* White text for correct answers */
+  }
+
+  .text-wrong {
+    color: #FFFFFF; /* White text for wrong answers */
+  }
+}
